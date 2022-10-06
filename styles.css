@@ -9,3 +9,82 @@ body {
     padding: 0;
     color: white;
 }
+
+
+/* Alinea el texto del encabezado al centro. */
+ 
+h1 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+  }
+  
+  /* Establece el ancho del acordeón. Establece el margen a 90px en la parte superior e inferior y auto a la izquierda y derecha */
+  
+  .acordeon {
+    width: 600px;
+    margin: auto;
+    padding: auto;
+  }
+
+  .acordeon .contenedor {
+    position: relative;
+    margin: 0%;
+  }
+  
+  /* Posiciona las etiquetas en relación con el contenedor. Añade relleno en la parte superior e inferior y aumenta el tamaño de la fuente. También hace que su cursor sea un puntero */
+  
+  .acordeon .etiqueta {
+    position: relative;
+    padding: 0% 0% 0% 0%;
+    font-size: 29px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  /* Posiciona el signo más a 5px de la derecha. Lo centra utilizando la propiedad transform. */
+
+.acordeon .etiqueta::before {
+    content: url("next (1).png");
+    position: absolute;
+    font-weight: normal;
+    right: 0px;
+    font-size: 30px;
+  }
+  
+  /* Oculta el contenido (altura: 0), disminuye el tamaño de la fuente, justifica el texto y añade la transición */
+  
+  .acordeon .contenido {
+    position: relative;
+    height: 0;
+    font-size: 16px;
+    width: 100%;
+    display: none;
+    transition: 0.5s;
+  }
+  
+
+  /* Muestra la parte de contenido cuando está activa*/
+
+.acordeon .contenedor.activa .contenido {
+    height: auto;
+    display: block;
+  }
+  
+  /* Cambia de signo positivo a negativo una vez activado */
+  
+  .acordeon .contenedor.activa .etiqueta::before {
+    content: url("next (2).png");
+  }
+
+  .parrafos {
+    margin: auto;
+    padding: auto;
+    width: 600px;
+    color: #92929d;
+  }
+
+  .parrafo {
+    padding: 50px 0;
+    line-height: 25px;
+  }
