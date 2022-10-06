@@ -10,14 +10,21 @@ body {
     color: white;
 }
 
-
+p {
+  font-family: 'Roboto', sans-serif;
+}
 /* Alinea el texto del encabezado al centro. */
  
-h1 {
+h1{
     text-align: center;
     font-size: 42px;
     font-weight: bold;
   }
+  h1,h3,h3,h3,h5,h6 {
+    font-family: Mabry-Pro-Medium;
+    src: url(fuentes/Mabry-Pro-Medium.ttf);
+  }
+  
   
   /* Establece el ancho del acordeón. Establece el margen a 90px en la parte superior e inferior y auto a la izquierda y derecha */
   
