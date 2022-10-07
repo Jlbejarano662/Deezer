@@ -9,11 +9,17 @@ body {
   padding: 0;
   color: white;
 }
+/* .body  {
+  background-image: linear-gradient(286deg,rgb(27 231 255/50%) 25.99%,#e47aff 64.62%,rgb(109 19 255/60%) 80.2%);
 
+} */
 p {
   font-family: 'Roboto', sans-serif;
 }
-
+h1,h3,h3,h3,h5,h6 {
+  font-family: Mabry-Pro-Medium;
+  src: url(fuentes/Mabry-Pro-Medium.ttf);
+}
 /* Alinea el texto del encabezado al centro y establece el tamaño */
 h1 {
   text-align: center;
@@ -49,30 +55,35 @@ h1 {
   position: relative;
   font-size: 16px;
   width: 100%;
-  margin-top: 0%;
-  margin-bottom: 16px;
 }
 
-div p {
+/* Esconde los parrafos del acordeon */
+.contenedor p {
   display: none;
 }
 
-div a {
+/* Da estilos a los titulos del acordeon */
+.contenedor  a {
   text-decoration: none;
   display: block;
   color: white;
   display: flex; 
   align-items:center;
   justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+/* Muestra los parrafos del acordeon */
+
+.contenedor:target p {
+  display: block;
+  height: auto;
 }
 
 .icon{
   font-size: 40px;
 }
-div:target p {
-  display: block;
-  height: auto;
-}
+
 
 .parrafos {
   margin: auto;
@@ -90,4 +101,90 @@ div:target p {
 
 section {
   margin-bottom: 96px;
+}
+
+.card {
+  max-width: 600px;
+  margin: auto auto 48px auto;
+  padding: auto;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+.etiqueta-card {
+  max-width: 600px;
+  margin: auto auto 48px auto;
+  padding: auto;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  border:solid 1px white;
+}
+
+.deezerFree {
+  background: linear-gradient(57.8deg,#6b42b4 9.75%,#943aab 95.44%);
+}
+
+.card-body {
+  padding: 24px 80px 16px;
+}
+
+.card h2 {
+  font-size: 38px;
+  font-weight: normal;
+  margin-top: 0;
+}
+.card h3 {
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 0px;
+}
+
+.card p, a {
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+}
+.card-text-2 {
+  margin: auto;
+}
+.btn {
+  height: 54px;
+  width: 100%;
+  max-width: 338px;
+  text-transform: uppercase;
+  border-radius: 400px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+
+}
+
+.btn-dark {
+  background-color: #121216;
+  color: white;
+}
+
+.card-text {
+  margin-bottom: 5px;
+}
+
+.deezer-free {
+  background: linear-gradient(57.8deg,#6b42b4 9.75%,#943aab 95.44%);
+}
+
+.deezer-family {
+  background: linear-gradient(53.13deg,#dc4c11 10.71%,#feab2e);
+}
+
+.ofertas-socios {
+  background: linear-gradient(180deg,#202122,#3a3b47 55.56%);
+}
+
+.logo-tigo {
+  width: 25px;
+}
+
+.deezer-premiun{
+  background: linear-gradient(69.06deg,#b84fdd -26.76%,#4965f4 44.6%,#2efb74 132.54%);
 }
