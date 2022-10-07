@@ -1,97 +1,93 @@
 body {
-    background-color: #121216;
-    font-family: Open Sans,Arial,sans-serif;
-    font-size: 12px;
-    line-height: 1.3333;
-    margin: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
-    padding: 0;
-    color: white;
+  background-color: #121216;
+  font-family: Open Sans,Arial,sans-serif;
+  font-size: 12px;
+  line-height: 1.3333;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0;
+  color: white;
 }
 
 p {
   font-family: 'Roboto', sans-serif;
 }
-/* Alinea el texto del encabezado al centro. */
- 
-h1{
-    text-align: center;
-    font-size: 42px;
-    font-weight: bold;
-  }
-  h1,h3,h3,h3,h5,h6 {
-    font-family: Mabry-Pro-Medium;
-    src: url(fuentes/Mabry-Pro-Medium.ttf);
-  }
-  
-  
-  /* Establece el ancho del acordeón. Establece el margen a 90px en la parte superior e inferior y auto a la izquierda y derecha */
-  
-  .acordeon {
-    width: 600px;
-    margin: auto;
-    padding: auto;
-  }
 
-  .acordeon .contenedor {
-    position: relative;
-    margin: 0%;
-  }
-  
-  /* Posiciona las etiquetas en relación con el contenedor. Añade relleno en la parte superior e inferior y aumenta el tamaño de la fuente. También hace que su cursor sea un puntero */
-  
-  .acordeon .etiqueta {
-    position: relative;
-    padding: 0% 0% 0% 0%;
-    font-size: 29px;
-    cursor: pointer;
-    font-weight: bold;
-  }
+/* Alinea el texto del encabezado al centro y establece el tamaño */
+h1 {
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+}
 
-  /* Posiciona el signo más a 5px de la derecha. Lo centra utilizando la propiedad transform. */
-
-.acordeon .etiqueta::before {
-    content: url("next (1).png");
-    position: absolute;
-    font-weight: normal;
-    right: 0px;
-    font-size: 30px;
-  }
+/* Establece el ancho del acordeón. Establece el margen y padding */
+.acordeon {
+  width: 600px;
+  margin: auto;
+  padding: auto;
+}
+/* Establece la posición y margen del contenido de los acordeones*/
+.acordeon .contenedor {
+  position: relative;
+  margin: 0%;
+}
   
-  /* Oculta el contenido (altura: 0), disminuye el tamaño de la fuente, justifica el texto y añade la transición */
-  
-  .acordeon .contenido {
-    position: relative;
-    height: 0;
-    font-size: 16px;
-    width: 100%;
-    display: none;
-    transition: 0.5s;
-  }
-  
+/* Posiciona las etiquetas en relación con el contenedor. Añade relleno en la parte superior y aumenta el tamaño de la fuente. También hace que su cursor sea un puntero */
+.acordeon .etiqueta {
+  position: relative;
+  padding: 0% 0% 0% 0%;
+  font-size: 29px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 16px;
+  margin-top: 0%;
+}
 
-  /* Muestra la parte de contenido cuando está activa*/
+/* Posiciona los parrafos en relación con el contenedor. Añade margen en la parte inferior y establece el tamaño de la fuente. */
+.acordeon .contenido {
+  position: relative;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 0%;
+  margin-bottom: 16px;
+}
 
-.acordeon .contenedor.activa .contenido {
-    height: auto;
-    display: block;
-  }
-  
-  /* Cambia de signo positivo a negativo una vez activado */
-  
-  .acordeon .contenedor.activa .etiqueta::before {
-    content: url("next (2).png");
-  }
+div p {
+  display: none;
+}
 
-  .parrafos {
-    margin: auto;
-    padding: auto;
-    width: 600px;
-    color: #92929d;
-  }
+div a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  display: flex; 
+  align-items:center;
+  justify-content: space-between;
+}
 
-  .parrafo {
-    padding: 50px 0;
-    line-height: 25px;
-  }
+.icon{
+  font-size: 40px;
+}
+div:target p {
+  display: block;
+  height: auto;
+}
+
+.parrafos {
+  margin: auto;
+  padding: auto;
+  width: 600px;
+  color: #92929d;
+}
+
+.parrafo {
+  padding: 50px 0;
+  line-height: 25px;
+  display: block;
+}
+
+
+section {
+  margin-bottom: 96px;
+}
