@@ -9,3 +9,33 @@ body {
     padding: 0;
     color: white;
 }
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.titulo_catalogo{
+    font-size: 42px;
+    margin: 0px 357px 24px;
+    text-align: center;
+    padding: 0px 20px;
+}
+.subtitulo_catalogo{
+    font-size: 16px;
+    color: #BEBEC7;
+    margin: 0px 357px 48px;
+    text-align: center;
+    padding: 0px 20px;
+}
+.contenedor_albums{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.albums img{
+    width: 215px;
+    height: 215px;
+}
+.albums p{
+    color: #BEBEC7;
+    font-size: 14px;
+}
