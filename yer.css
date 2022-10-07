@@ -1,3 +1,4 @@
+/*  HEADER DEEZER   */
 .contenedor-header{
     display: flex;
     align-items: top;
@@ -6,6 +7,11 @@
     padding: 0px;
 }
 
+.contenedor p{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*  DIV TIGO */
 .contenedor-tigo{
     align-items: center;
     justify-items: center;
@@ -27,19 +33,22 @@
     width: 20px;
 }   
 
+/*  LOGO DEEZER */
 .logo-deezer{
     width: 117px;
     height: 24px;
     margin: 0px 0px 10px 0px;
 }
 
+/*  BOTÓN DE INICIO DE SESIÓN   */
 .boton-iniciar-sesion{
+    font-size: 12px;
     color: #fff;
     background: #121216;
     border-width: 1px;
     border-style: solid;
     border-color: #fff;
     border-radius: 100px;
-    padding: 0px 10px;
-    content: 0px 40px;
+    padding: 5px 10px;
+    text-decoration: none;
 }
