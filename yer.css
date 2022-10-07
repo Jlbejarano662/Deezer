@@ -1,0 +1,45 @@
+.contenedor-header{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    margin: 15px 25px;
+    padding: 0px;
+}
+
+.contenedor-tigo{
+    align-items: center;
+    justify-items: center;
+    padding: 20px 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 10px;
+}
+
+.cont-tigo-top{
+    display: flex;
+}
+.cont-tigo-btm{
+    justify-items: center;
+}
+
+.logo-tigo{
+    width: 20px;
+}   
+
+.logo-deezer{
+    width: 117px;
+    height: 24px;
+    margin: 0px 0px 10px 0px;
+}
+
+.boton-iniciar-sesion{
+    color: #fff;
+    background: #121216;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 100px;
+    padding: 0px 10px;
+    content: 0px 40px;
+}
