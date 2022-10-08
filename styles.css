@@ -13,6 +13,13 @@ body {
     margin: 0%;
     padding: 0%;
 }
+p {
+    font-family: 'Roboto', sans-serif;
+  }
+  h1,h2,h3,h3,h3,h5,h6 {
+    font-family: Mabry-Pro-Medium;
+    src: url(fuentes/Mabry-Pro-Medium.ttf);
+  }
 .titulo_catalogo{
     font-size: 42px;
     margin: 0px 357px 24px;
@@ -27,15 +34,118 @@ body {
     padding: 0px 20px;
 }
 .contenedor_albums{
-    display: flex;
-    align-items: center;
+    display: grid;
     text-align: center;
+    grid-template-columns: 20.5% 20.5% 20.5% 20.5% 20.5%;
+    margin: 0px 33.5px;
+    padding: 0px 20px; 
 }
 .albums img{
     width: 215px;
     height: 215px;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
 }
 .albums p{
     color: #BEBEC7;
     font-size: 14px;
+    margin: 8px 0px 0px; 
 }
+.imagen_play{
+    /* margin: 0px 33.5px;
+    padding: 0px 20px; */
+    position:relative;
+}
+.albums .btn-play{
+    font-size: 30px;
+    line-height: 30px;
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    margin: 0%;
+    padding: 0%;
+    /* transform: translate(-50%) */
+}
+.btn1 {
+    height: 54px;
+    width: 100%;
+    max-width: 267.81px;
+    text-transform: uppercase;
+    border-radius: 400px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin: 45px 543.094px 103px;
+    padding: 10px 32px;
+  }
+  
+  .btn-claro {
+    background-color: white;
+    color: black;
+  }
+
+/*divisor*/
+.divisor{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+}
+.divisor.linea-divisora:first-of-type{
+    background-image: linear-gradient(270deg, currentcolor, currentcolor 84.88%, rgba(0, 0, 0, 0));
+}
+.divisor.linea-divisora{
+    flex-shrink: 1;
+    height: 2px;
+    width: 243.8px;
+    padding: 0px 16px;
+}
+.divisor.texto-divisorio{
+    flex-shrink: 0;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+/*Importa*/
+.importa{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.titulo-importa{
+    font-size: 42px;
+    margin: 25px 0px 24px;
+}
+.subtitulo-importa{
+    font-size: 16px;
+    color: #BEBEC7;
+}
+.imagen-importa{
+    margin-left: 15px;
+}
+
+.btn2 {
+    height: 54px;
+    width: 100%;
+    max-width: 194.59px;
+    text-transform: uppercase;
+    border-radius: 400px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 543.094px;
+    padding: 10px 32px;
+  }
+  
+  .btn-claro {
+    background-color: white;
+    color: black;
+  }
