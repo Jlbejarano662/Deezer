@@ -9,14 +9,20 @@ body {
   padding: 0;
   color: white;
 }
+section {
+  margin-bottom: 96px;
+}
+
 /* .body  {
   background-image: linear-gradient(286deg,rgb(27 231 255/50%) 25.99%,#e47aff 64.62%,rgb(109 19 255/60%) 80.2%);
 
 } */
+
 p {
   font-family: 'Roboto', sans-serif;
 }
-h1,h3,h3,h3,h5,h6 {
+
+h1{
   font-family: Mabry-Pro-Medium;
   src: url(fuentes/Mabry-Pro-Medium.ttf);
 }
@@ -25,6 +31,137 @@ h1 {
   text-align: center;
   font-size: 42px;
   font-weight: bold;
+}
+
+.card {
+  max-width: 600px;
+  margin: auto auto 48px auto;
+  padding: auto;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+.etiqueta-card {
+  width: 600px;
+  margin: auto auto 48px auto;
+  padding: 8px 0px;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  border:solid 1px white;
+  position: relative;
+}
+
+.card-body {
+  padding: 24px 80px 16px;
+}
+
+.card h2 {
+  font-size: 38px;
+  font-weight: normal;
+  margin-top: 0;
+}
+.card h3 {
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 0px;
+}
+
+.card p, a {
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+}
+.card-text-2 {
+  margin: auto;
+}
+.btn {
+  height: 54px;
+  width: 100%;
+  max-width: 338px;
+  text-transform: uppercase;
+  border-radius: 400px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn-dark {
+  background-color: #121216;
+  color: white;
+}
+.btn-dark:hover {
+  background-color: white;
+  color: black;
+}
+.card-text {
+  margin-bottom: 5px;
+}
+
+/*fondo morado degradado */
+.bg-purple {
+  background: linear-gradient(57.8deg,#6b42b4 9.75%,#943aab 95.44%);
+}
+/* fondo naranja degrado*/
+.bg-orange {
+  background: linear-gradient(53.13deg,#dc4c11 10.71%,#feab2e);
+}
+/*fondo gris degrado */
+.bg-grey {
+  background: linear-gradient(180deg,#202122,#3a3b47 55.56%);
+}
+
+.logo-tigo {
+  width: 25px;
+}
+/* fondo azul-morado degradado */
+.bg-blue-purple {
+  background: linear-gradient(69.06deg,#b84fdd -26.76%,#4965f4 44.6%,#2efb74 132.54%);
+}
+
+/* Esconde los elementos */
+.deezer-premiun-anual, .deezer-student, input[type=checkbox]{
+  display: none;
+}
+
+/* Muestra el contenido de deezer premiun anual */
+#deezer-premiun-anual:checked ~ .card.deezer-premiun-anual {
+  display: block;
+}
+
+/* Esconde el contenido de la eiqueta para deezer premiun anual */
+#deezer-premiun-anual:checked ~ .etiqueta-card.premiun-anual {
+  display: none;
+}
+
+/* Muestra el contenido de deezer student */
+#deezer-student:checked ~ .card.deezer-student {
+  display: block;
+}
+
+/* Esconde el contenido de la eiqueta para deezer student */
+#deezer-student:checked ~ .etiqueta-card.student {
+  display: none;
+}
+
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  display: flex; 
+  align-items:center;
+  justify-content: center;
+  margin: auto 60px;
+}
+
+.etiqueta-descuento {
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 1.3333;
+  padding: 3px 10px;
+  position: absolute;
+  margin: -24px 540px;
+
 }
 
 /* Establece el ancho del acordeón. Establece el margen y padding */
@@ -63,25 +200,20 @@ h1 {
 }
 
 /* Da estilos a los titulos del acordeon */
-.contenedor  a {
+.contenedor  label {
   text-decoration: none;
   display: block;
   color: white;
   display: flex; 
   align-items:center;
   justify-content: space-between;
-  margin-bottom: 16px;
+  margin: 0 0 16px 0;
 }
 
-/* Muestra los parrafos del acordeon */
 
-.contenedor:target p {
-  display: block;
-  height: auto;
-}
 
-.icon{
-  font-size: 40px;
+.icon-acordeon{
+  width: 30px;
 }
 
 
@@ -99,92 +231,34 @@ h1 {
 }
 
 
-section {
-  margin-bottom: 96px;
+
+
+/* Muestra el contenido del acordeon contenedor uno */
+#contenedor-uno:checked ~ .contenedor.uno p {
+  display: block;
+  height: auto;
 }
 
-.card {
-  max-width: 600px;
-  margin: auto auto 48px auto;
-  padding: auto;
-  align-items: center;
-  text-align: center;
-  border-radius: 20px;
-}
-.etiqueta-card {
-  max-width: 600px;
-  margin: auto auto 48px auto;
-  padding: auto;
-  align-items: center;
-  text-align: center;
-  border-radius: 20px;
-  border:solid 1px white;
+/* Muestra el contenido del acordeon contenedor dos */
+#contenedor-dos:checked ~ .contenedor.dos p {
+  display: block;
+  height: auto;
 }
 
-.deezerFree {
-  background: linear-gradient(57.8deg,#6b42b4 9.75%,#943aab 95.44%);
+/* Muestra el contenido del acordeon contenedor tres */
+#contenedor-tres:checked ~ .contenedor.tres p {
+  display: block;
+  height: auto;
 }
 
-.card-body {
-  padding: 24px 80px 16px;
+/* Muestra el contenido del acordeon contenedor tres */
+#contenedor-cuatro:checked ~ .contenedor.cuatro p {
+  display: block;
+  height: auto;
 }
 
-.card h2 {
-  font-size: 38px;
-  font-weight: normal;
-  margin-top: 0;
-}
-.card h3 {
-  font-size: 32px;
-  font-weight: normal;
-  margin-bottom: 0px;
-}
-
-.card p, a {
-  font-size: 16px;
-  line-height: 19px;
-  color: white;
-}
-.card-text-2 {
-  margin: auto;
-}
-.btn {
-  height: 54px;
-  width: 100%;
-  max-width: 338px;
-  text-transform: uppercase;
-  border-radius: 400px;
-  border: none;
-  font-size: 14px;
-  font-weight: bold;
-
-}
-
-.btn-dark {
-  background-color: #121216;
-  color: white;
-}
-
-.card-text {
-  margin-bottom: 5px;
-}
-
-.deezer-free {
-  background: linear-gradient(57.8deg,#6b42b4 9.75%,#943aab 95.44%);
-}
-
-.deezer-family {
-  background: linear-gradient(53.13deg,#dc4c11 10.71%,#feab2e);
-}
-
-.ofertas-socios {
-  background: linear-gradient(180deg,#202122,#3a3b47 55.56%);
-}
-
-.logo-tigo {
-  width: 25px;
-}
-
-.deezer-premiun{
-  background: linear-gradient(69.06deg,#b84fdd -26.76%,#4965f4 44.6%,#2efb74 132.54%);
+/* Muestra el contenido del acordeon contenedor tres */
+#contenedor-cinco:checked ~ .contenedor.cinco p {
+  display: block;
+  height: auto;
 }

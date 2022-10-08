@@ -19,7 +19,7 @@
         <section>
             <h1>The Power of Music</h1>
             <article>
-                <div class="card deezer-free">
+                <div class="card bg-purple">
                     <div class="card-body">
                         <h2>deezer <b>Free</b></h2>
                         <p>Música, podcasts y radio, además de recomendaciones hechas para ti.</p>
@@ -30,7 +30,7 @@
                 </div>
             </article>
             <article>
-                <div class="card deezer-family">
+                <div class="card bg-orange">
                     <div class="card-body">
                         <h2>deezer <b>Family</b></h2>
                         <p>Música para todos.</p>
@@ -45,19 +45,18 @@
                 </div>
             </article>
             <article>
-                <div class="card ofertas-socios">
+                <div class="card bg-grey">
                     <div class="card-body">
                         <p>Ofertas de socios</p>
                         <p>
                             <img class="logo-tigo" alt="Tigo" src="https://cdns-images.dzcdn.net/images/misc/a0633eb02f235760531c2c4cf79bece0/48x0-none-90-1-1.png">
                         </p>
-
                         <button class="btn btn-dark">Activar la oferta de mi socio</button>
                     </div>
                 </div>
             </article>
             <article>
-                <div class="card deezer-premiun">
+                <div class="card bg-blue-purple deezer-premiun">
                     <div class="card-body">
                         <h2>deezer <b>Premium</b></h2>
                         <p>Elige y escucha cualquier canción sin anuncios y además, descarga tus favoritos y escúchalos sin conexión.</p>
@@ -69,13 +68,19 @@
                         <a href="">Más información</a>
                     </div>
                 </div>
+
             </article>
             <article>
-                <div class="card deezer-premiun">
+                <input type="checkbox" id="deezer-premiun-anual" />
+                <div class="etiqueta-card premiun-anual">
+                    <label for="deezer-premiun-anual" >Descuento anual<img src="icons8-expand-arrow-24.png"   alt="icon-angle-right" class="icon"></label>
+                    <div class="bg-blue-purple etiqueta-descuento">-25%</div>
+                </div>
+                <div class="card bg-blue-purple deezer-premiun-anual">
                     <div class="card-body">
                         <h2>deezer <b>Premium Anual</b></h2>
                         <p>Todos los beneficios de Deezer Premium a un precio anual con descuento.</p>
-                        <button class="btn btn-dark">Suscribirse</button>
+                        <button class="btn btn-dark" id="deezer-premiun" >Suscribirse</button>
                         <h3><b>25% de descuento</b></h3>
                         <p class="card-text-2">$13.425/mes al pagar anualmente</p>
                         <P class="card-text">Un compromiso por 1 año.</P>
@@ -84,10 +89,12 @@
                 </div>
             </article>
             <article>
-                <div class="etiqueta-card">
-                    <label for=""><p><b>Descuento anual</b></p><img src="icons8-more-than-50.png" width="30px" alt="icon-angle-right" class="icon"></a></label>
+                <input type="checkbox" id="deezer-student" />
+                <div class="etiqueta-card student">
+                    <label for="deezer-student">Descuento para estudiantes<img src="icons8-expand-arrow-24.png"   alt="icon-angle-right" class="icon"></label>
+                    <div class="bg-blue-purple etiqueta-descuento">-50%</div>
                 </div>
-                <div class="card deezer-premiun">
+                <div class="card bg-blue-purple deezer-student">
                     <div class="card-body">
                         <h2>deezer <b>Student</b></h2>
                         <p>Todos los beneficios de Deezer Premium a mitad de precio para aprovechar al máximo tu vida de estudiante.</p>
@@ -105,29 +112,46 @@
             <div class="acordeon-cuerpo">
                 <div class="acordeon">
                     <h1>Preguntas frecuentes</h1>
-                    <div class="contenedor" id="contenedor1">
-                        <a href="#contenedor1"><h2 class="etiqueta">¿Qué es Deezer?</h2>                        
-                        <img src="icons8-more-than-50.png" width="30px" alt="icon-angle-right" class="icon"></a>
+                    <input type="checkbox" id="contenedor-uno"/>
+                    <div class="contenedor uno">
+                        <label for="contenedor-uno">
+                            <h2 class="etiqueta">¿Qué es Deezer?</h2>                        
+                            <img src="icons8-more-than-50.png" alt="icon-angle-right" class="icon-acordeon">
+                        </label>
                         <p class="contenido"> Deezer es una app de streaming de música que te brinda acceso a más de 90 millones de canciones de todo el mundo y otras experiencias de audio como podcasts. También obtienes recomendaciones personalizadas y contenido exclusivo de Deezer Originals.</p>
                         <p class="contenido">Escucha música en línea, colecciona tus canciones favoritas, crea playlists y compártelas con amigos. Todo gratis.</p>
                         <p class="contenido">También puedes descargar toda tu música favorita y escucharla sin conexión con Deezer Premium, Deezer Family y otros planes.</p>
                     </div>
-                    <div class="contenedor" id="contenedor2">
-                        <a href="#contenedor2"><h2 class="etiqueta">¿Cuánto cuesta Deezer?</h2>                        
-                        <img src="icons8-more-than-50.png" width="30px" alt="icon-angle-right" class="icon"></a>
+                    <input type="checkbox" id="contenedor-dos"/>
+                    <div class="contenedor dos">
+                        <label for="contenedor-dos">
+                            <h2 class="etiqueta">¿Cuánto cuesta Deezer?</h2>                        
+                            <img src="icons8-more-than-50.png" alt="icon-angle-right" class="icon-acordeon">
+                        </label>
                         <p class="contenido"> Deezer Free ofrece una experiencia de aplicación de música completamente gratuita. Si eliges una de nuestras <b>ofertas de streaming de música de pago</b>, puedes disfrutar de nuestras funciones avanzadas por tan sólo $17.900/mes. Aplican condiciones.</p>
                     </div>
-                    <div class="contenedor" id="contenedor3">
-                        <a href="#contenedor3"><h2 class="etiqueta">¿Cómo utilizo Deezer?</h2>                        
-                        <img src="icons8-more-than-50.png" width="30px" alt="icon-angle-right" class="icon"></a>
+                    <input type="checkbox" id="contenedor-tres"/>
+                    <div class="contenedor tres">
+                        <label for="contenedor-tres">
+                            <h2 class="etiqueta">¿Cómo utilizo Deezer?</h2>                        
+                            <img src="icons8-more-than-50.png" alt="icon-angle-right" class="icon-acordeon">
+                        </label>                       
                         <p class="contenido">Descarga la app en tu teléfono, tableta o computadora de escritorio y luego regístrate gratis. Una vez que hayas iniciado sesión en tu nueva cuenta, ¡podrás escuchar tu música favorita!.</p>
                     </div>
-                    <div class="contenedor" id="contenedor4">
-                        <a href="#contenedor4"><h2 class="etiqueta">¿Cómo cancelo mi suscripción?</h2>                        <img src="icons8-more-than-50.png" width="30px" alt="icon-angle-right" class="icon"></a>
+                    <input type="checkbox" id="contenedor-cuatro"/>
+                    <div class="contenedor cuatro">
+                        <label for="contenedor-cuatro">
+                            <h2 class="etiqueta">¿Cómo cancelo mi suscripción?</h2>                        
+                            <img src="icons8-more-than-50.png" alt="icon-angle-right" class="icon-acordeon">
+                        </label>
                         <p class="contenido">Puedes actualizar o cancelar una suscripción existente en cualquier momento, seleccionando "Administrar mi suscripción" en los Ajustes de tu cuenta.</p>
                     </div>
-                    <div id="contenedor5" class="contenedor">
-                        <a href="#contenedor5"><h2 class="etiqueta">¿Dónde puedo escuchar Deezer?</h2>                        <img src="icons8-more-than-50.png" width="30px" alt="icon-angle-right" class="icon"></a>
+                    <input type="checkbox" id="contenedor-cinco"/>
+                    <div class="contenedor cinco">
+                        <label for="contenedor-cinco">
+                            <h2 class="etiqueta">¿Dónde puedo escuchar Deezer?</h2>                        
+                            <img src="icons8-more-than-50.png" alt="icon-angle-right" class="icon-acordeon">
+                        </label>
                         <p class="contenido">Deezer es compatible con computadoras de escritorio y la mayoría de los dispositivos móviles y tabletas. También es posible hacer streaming y transmitir desde determinados dispositivos para el hogar y altavoces. Puedes encontrar todos los dispositivos compatibles aquí.</p>
                         <p class="contenido">Los usuarios con una suscripción de pago pueden escuchar música a donde vayan, descargando sus canciones y playlists favoritas.</p>
                     </div>
