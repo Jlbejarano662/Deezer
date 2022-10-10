@@ -60,8 +60,6 @@ p {
     
 }
 .imagen_play{
-    /* margin: 0px 33.5px;
-    padding: 0px 20px; */
     position:relative;
 }
 .albums .btn-play{
@@ -76,7 +74,6 @@ p {
     background-color: black;
     border-radius: 400px;
     border: none;
-    /* transform: translate(-50%) */
 }
 .btn1 {
     height: 54px;
@@ -154,7 +151,7 @@ p {
     padding: 10px 32px;
   }
   
-  .btn-claro {
+.btn-claro {
     background-color: white;
     color: black;
-  }
+}
