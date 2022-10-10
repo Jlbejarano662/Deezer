@@ -17,12 +17,21 @@ section {
   background-image: linear-gradient(286deg,rgb(27 231 255/50%) 25.99%,#e47aff 64.62%,rgb(109 19 255/60%) 80.2%);
 
 } */
+.centrar-elementos{
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+/*   margin-top: 48px;
+  margin-bottom: 48px; */
+}
 
-p {
+p, button {
   font-family: 'Roboto', sans-serif;
 }
 
-h1{
+h1, h2, h3{
   font-family: Mabry-Pro-Medium;
   src: url(fuentes/Mabry-Pro-Medium.ttf);
 }
@@ -33,6 +42,31 @@ h1 {
   font-weight: bold;
 }
 
+h2 {
+  font-size: 42px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 29px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.parrafo-principal {
+  font-size: 16px;
+  text-align: center;
+  line-height: 25px;
+  margin-bottom: 48px;
+}
+
+.parrafo-secundario {
+  font-size: 16px;
+  text-align: center;
+  line-height: 25px;
+  margin-bottom: 0;
+}
+
 .card {
   max-width: 600px;
   margin: auto auto 48px auto;
@@ -40,60 +74,95 @@ h1 {
   align-items: center;
   text-align: center;
   border-radius: 20px;
+  cursor: pointer;
 }
+
 .etiqueta-card {
   width: 600px;
-  margin: auto auto 48px auto;
+  margin: auto auto 24px auto;
   padding: 8px 0px;
   align-items: center;
   text-align: center;
   border-radius: 20px;
   border:solid 1px white;
   position: relative;
+  cursor: pointer;
 }
 
 .card-body {
   padding: 24px 80px 16px;
 }
 
+
+
+.image {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1100px;
+  cursor: pointer;
+}
+
+.image.offline{
+  margin-top: 12px;
+  margin-bottom: 48px;
+}
+
+/*titulo primario de las tarjetas*/
 .card h2 {
   font-size: 38px;
   font-weight: normal;
   margin-top: 0;
 }
+/*titulo secundario de las tarjetas*/
 .card h3 {
   font-size: 32px;
   font-weight: normal;
   margin-bottom: 0px;
 }
 
+/* estilos a los parrafos y etiquetas de las tarjetas*/
 .card p, a {
   font-size: 16px;
   line-height: 19px;
   color: white;
 }
+
+/*texto secunadrio de las tarjetas*/
 .card-text-2 {
   margin: auto;
 }
+
+/* botón base*/
 .btn {
   height: 54px;
-  width: 100%;
-  max-width: 338px;
   text-transform: uppercase;
   border-radius: 400px;
   border: none;
   font-size: 14px;
   font-weight: bold;
+  cursor:pointer;
 }
 
+/*Botón negro*/
 .btn-dark {
+  width: 100%;
+  max-width: 338px;
   background-color: #121216;
   color: white;
 }
+
+/* negativo del boton dark cuando se pasa el cursor*/
 .btn-dark:hover {
   background-color: white;
   color: black;
 }
+
+/* Botón blanco*/
+.btn-ligth {
+  padding: 10px 32px;
+}
+
+/* da estilos al texto de las tarjetas*/
 .card-text {
   margin-bottom: 5px;
 }
@@ -144,7 +213,7 @@ h1 {
   display: none;
 }
 
-
+/*Da estilos al label de la etiqueta-card*/
 label {
   font-size: 14px;
   font-weight: bold;
@@ -152,8 +221,10 @@ label {
   align-items:center;
   justify-content: center;
   margin: auto 60px;
+  cursor: pointer;
 }
 
+/* pone la etiqueta de descuento dentro de la etiqueta-card */
 .etiqueta-descuento {
   border-radius: 20px;
   font-size: 14px;
@@ -194,45 +265,6 @@ label {
   width: 100%;
 }
 
-/* Esconde los parrafos del acordeon */
-.contenedor p {
-  display: none;
-}
-
-/* Da estilos a los titulos del acordeon */
-.contenedor  label {
-  text-decoration: none;
-  display: block;
-  color: white;
-  display: flex; 
-  align-items:center;
-  justify-content: space-between;
-  margin: 0 0 16px 0;
-}
-
-
-
-.icon-acordeon{
-  width: 30px;
-}
-
-
-.parrafos {
-  margin: auto;
-  padding: auto;
-  width: 600px;
-  color: #92929d;
-}
-
-.parrafo {
-  padding: 50px 0;
-  line-height: 25px;
-  display: block;
-}
-
-
-
-
 /* Muestra el contenido del acordeon contenedor uno */
 #contenedor-uno:checked ~ .contenedor.uno p {
   display: block;
@@ -261,4 +293,41 @@ label {
 #contenedor-cinco:checked ~ .contenedor.cinco p {
   display: block;
   height: auto;
+}
+
+/* Esconde los parrafos del acordeon */
+.contenedor p {
+  display: none;
+}
+
+/* Da estilos a los titulos del acordeon */
+.contenedor  label {
+  text-decoration: none;
+  display: block;
+  color: white;
+  display: flex; 
+  align-items:center;
+  justify-content: space-between;
+  margin: 0 0 16px 0;
+}
+
+/* Da estilo al icono del acordeon */
+.icon-acordeon{
+  width: 30px;
+}
+
+/* Centra los parráfos */
+.parrafos {
+  margin-left: auto;
+  margin-right: auto;
+  padding: auto;
+  width: 600px;
+  color: #92929d;
+  
+}
+
+/* Da estilo al parrafo secuandario */
+.parrafo {
+  padding: 50px 0;
+  line-height: 25px;
 }
