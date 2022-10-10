@@ -15,8 +15,43 @@ section {
 
 /* .body  {
   background-image: linear-gradient(286deg,rgb(27 231 255/50%) 25.99%,#e47aff 64.62%,rgb(109 19 255/60%) 80.2%);
+  background-image: var(--bg-gradient);
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  border-radius: 100%;
+  content: "";
+  -webkit-filter: blur(100px);
+  filter: blur(100px);
+  height: 30vh;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: .9;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 80vw;
+  z-index: -1;
+}  */
 
-} */
+
+header::before {
+  content: "";
+  width: 90vw;
+  height: 50vh;
+  background: linear-gradient(125deg,rgba(241, 42, 42, .9) 25.99%,#BF1CEB 50%, #06AD57 76%, rgba(6, 173, 87, .6) 100%);
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px) opacity(.4);
+  inset: 0;
+  margin: auto;
+  z-index: -1;
+}
+header {
+ height: 115px;
+ position: relative;
+}
 .centrar-elementos{
   display: flex; 
   align-items: center; 
