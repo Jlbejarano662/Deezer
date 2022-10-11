@@ -4,20 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet"href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <style>
-         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-    </style>   
-    <script src="https://kit.fontawesome.com/074409b7ce.js" crossorigin="anonymous"></script><!--Agregado por Juliana-->
-    <title>Deezer</title>
+    <link rel="stylesheet" href="css/yer.css">
+    <link rel="icon" href="https://e-cdn-files.dzcdn.net/cache/images/common/favicon/favicon.a6a53d55264841165a904dbea19d5d73.ico">    
+    <script src="https://kit.fontawesome.com/074409b7ce.js" crossorigin="anonymous"></script>
+    <title>Deezer | Escuchar música online | Aplicación con reproductor de música</title>
 </head>
-<body class="body">
+<body>
+    <!--    HEADER  -->
     <header>
-        <nav></nav>
+        <ul class="contenedor-header">
+            <li class="contenedor-header">
+                <div class="contenedor-tigo">
+                    <div class="cont-tigo-top">
+                        Activar la oferta de mi socio 
+                        <img src="img/icons8-more-than-50.png" alt="" width="13" class="icono-flecha-tigo">
+                    </div>
+                    <img src="https://cdns-images.dzcdn.net/images/misc/a0633eb02f235760531c2c4cf79bece0/48x0-none-90-1-1.png" alt="" class="logo-tigo">
+                </div>
+            </li>
+            <li class="contenedor-header">
+                <img src="https://e-cdn-files.dzcdn.net/cache/slash/images/common/logos/deezer.1a1741c7871c27ef0ecb572defe8593e.png" alt="" class="logo-deezer">
+            </li>
+            <li class="contenedor-header">
+                <a href="#" class="boton-iniciar-sesion">INICIAR SESIÓN</a>
+            </li>
+        </ul>
     </header>
     <main>
-        <section>
+        <section class="section">
             <h1>The Power of Music</h1>
             <article>
                 <div class="card bg-purple">
@@ -26,7 +43,7 @@
                         <p>Música, podcasts y radio, además de recomendaciones hechas para ti.</p>
                         <button class="btn btn-dark">Regístrate gratis</button>
                         <P class="card-text">No se requiere pago</P>
-                        <a href="">Más información</a>
+                        <a class="card-enlace" href="">Más información</a>
                     </div>
                 </div>
             </article>
@@ -41,7 +58,7 @@
                         <h3><b>1 mes gratis</b></h3>
                         <p class="card-text-2">luego $27.900/mes.</p>
                         <P class="card-text">Sin compromiso, puedes cancelar cuando quieras.</P>
-                        <a href="">Más información</a>
+                        <a class="card-enlace" href="">Más información</a>
                     </div>
                 </div>
             </article>
@@ -50,7 +67,7 @@
                     <div class="card-body">
                         <p>Ofertas de socios</p>
                         <p>
-                            <img class="logo-tigo" alt="Tigo" src="https://cdns-images.dzcdn.net/images/misc/a0633eb02f235760531c2c4cf79bece0/48x0-none-90-1-1.png">
+                            <img class="logo-tigo-j" alt="Tigo" src="https://cdns-images.dzcdn.net/images/misc/a0633eb02f235760531c2c4cf79bece0/48x0-none-90-1-1.png">
                         </p>
                         <button class="btn btn-dark">Activar la oferta de mi socio</button>
                     </div>
@@ -66,7 +83,7 @@
                         <h3><b>1 mes gratis</b></h3>
                         <p class="card-text-2">luego $17.900/mes.</p>
                         <P class="card-text">Sin compromiso, puedes cancelar cuando quieras.</P>
-                        <a href="">Más información</a>
+                        <a class="card-enlace" href="">Más información</a>
                     </div>
                 </div>
 
@@ -85,7 +102,7 @@
                         <h3><b>25% de descuento</b></h3>
                         <p class="card-text-2">$13.425/mes al pagar anualmente</p>
                         <P class="card-text">Un compromiso por 1 año.</P>
-                        <a href="">Más información</a>
+                        <a class="card-enlace" href="">Más información</a>
                     </div>
                 </div>
             </article>
@@ -104,12 +121,12 @@
                         <h3><b>1 mes gratis</b></h3>
                         <p class="card-text-2">luego $8.450/mes.</p>
                         <P class="card-text">Sin compromiso, puedes cancelar cuando quieras.</P>
-                        <a href="">Más información</a>
+                        <a class="card-enlace" href="">Más información</a>
                     </div>
                 </div>
             </article>
         </section>
-        <section>
+        <section class="section">
             <h2>¿Por qué elegir Deezer?</h2>
             <p class="parrafos parrafo-principal">Haz stream de millones de canciones, podcasts y canales de radio. Accede a nuestra app de música desde todos tus dispositivos. Descubre las funciones básicas y exclusivas incorporadas.</p>
             <div class="centrar-elementos">
@@ -136,10 +153,71 @@
                 </div>
             </article>
         </section>
-        <section>
+        <div>
+            <!--Catálogo-->
+            <h3 class="titulo_catalogo">El catálogo más grande de <br> audio en streaming</h3>
+            <p class="subtitulo_catalogo">Disfruta del acceso a un catálogo de más de 90 millones de canciones, playlists, <br> podcasts y canales de radio. Descubre nuevos lanzamientos de música y álbumes <br> de moda para crear tu propia biblioteca.</p>
+            <section class="contenedor_albums">
+              <section class="albums">
+                <section class="imagen_play">
+                  <a href="#"><img src="img/imagen1.jpg" alt="Imagen album Feid"></a>
+                  <a href="#" class="btn-play"><i class="fa-solid fa-circle-play"></i></a> 
+                </section>
+                  <a href="#" class="link"><p>FELIZ CUMPLEAÑOS FERXXO TE <br> PIRATEAMOS EL ÁLBUM <br> Feid</p></a>
+              </section>
+              <section class="albums">
+                <section class="imagen_play">
+                  <a href="#"><img src="img/imagen2.jpg" alt="Imagen album SEULGI"></a>
+                  <a href="#" class="btn-play"><i class="fa-solid fa-circle-play"></i></a>
+                </section>
+                <a href="#" class="link"><p>28 Reasons - The 1st Mini Album <br> SEULGI</p></a>
+              </section>
+              <section class="albums">
+                <section class="imagen_play">
+                  <a href="#"><img src="img/imagen3.jpg" alt="Imagen album Faun"></a>
+                  <a href="#" class="btn-play"><i class="fa-solid fa-circle-play"></i></a>
+                </section>
+                <a href="#" class="link"><p>Renaissance (Pagan Medieval <br> Folk) <br> Faun</p></a>
+              </section>
+              <section class="albums">
+                <section class="imagen_play">
+                  <a href="#"><img src="img/imagen4.jpg" alt="Imagen album Bad Bunny"></a>
+                  <a href="#" class="btn-play"><i class="fa-solid fa-circle-play"></i></a>
+                </section>
+                <a href="#" class="link"><p>Un Verano Sin Ti <br> Bad Bunny</p></a>
+              </section>
+              <section class="albums">
+                <section class="imagen_play">
+                  <a href="#"><img src="img/imagen5.jpg" alt="Imagen albums Faun"></a>
+                  <a href="#" class="btn-play"><i class="fa-solid fa-circle-play"></i></a>
+                </section>
+                <a href="#" class="link"><p>Licht <br> Faun</p></a>
+              </section>
+            </section>
+            <div class="centrar-elementos">
+                <button class="btn btn-ligth m">Explora nuestro catálogo</button>
+            </div>
+        </div>
+      
+        <!--linea divisoria Novedades-->
+        <div class="divisor">
+            <p class="texto-divisor"><strong>NOVEDADES</strong></p>
+        </div>
+    
+        <!--Importa-->
+        <div class="importa" >
+            <h2 class="titulo-importa">Importa tu biblioteca de música <br> a Deezer</h2>
+            <p class="subtitulo-importa">Transfiere toda tu biblioteca de música desde otro servicio de streaming de música <br> a Deezer con un solo clic.</p>
+            <a href="#"><img src="img/importa.png" class="imagen-importa"></a>
+            <div class="centrar-elementos">
+                <button class="btn btn-ligth m">Más información</button>
+            </div>
+        </div>
+
+        <section class="section">
             <div class="acordeon-cuerpo">
                 <div class="acordeon">
-                    <h1>Preguntas frecuentes</h1>
+                    <h1>FAQ</h1>
                     <input type="checkbox" id="contenedor-uno"/>
                     <div class="contenedor uno">
                         <label for="contenedor-uno">
@@ -186,71 +264,97 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="section">
             <div class="parrafos">
                 <p class="parrafo">
                     Estas ofertas son sin compromiso, lo que significa que puedes cancelar tu suscripción en cualquier momento. Estas ofertas solo están disponibles para usuarios que no tengan actualmente o hayan tenido una suscripción previa a cualquier plan de Deezer, sin beneficios de cualquier promoción previa de Deezer y sin ninguna prueba gratis para cualquier suscripción de Deezer en algún momento. Estas ofertas no se pueden combinar con ninguna otra oferta. Estas son ofertas por tiempo limitado y solo son válidas para un usuario.
                 </p>
             </div>
         </section>
-        
-    </main>
-    <div>
-      <!--Catálogo-->
-      <h3 class="titulo_catalogo">El catálogo más grande de <br> audio en streaming</h3>
-      <p class="subtitulo_catalogo">Disfruta del acceso a un catálogo de más de 90 millones de canciones, playlists, <br> podcasts y canales de radio. Descubre nuevos lanzamientos de música y álbumes <br> de moda para crear tu propia biblioteca.</p>
-      <section class="contenedor_albums">
-        <section class="albums">
-          <section class="imagen_play">
-            <a href="#"><img src="imagen1.jpg" alt="Imagen album Feid"></a>
-            <a href="#" class="btn-play"><i class="fa-solid fa-circle-play"></i></a> 
-          </section>
-            <a href="#" class="link"><p>FELIZ CUMPLEAÑOS FERXXO TE <br> PIRATEAMOS EL ÁLBUM <br> Feid</p></a>
-        </section>
-        <section class="albums">
-          <section class="imagen_play">
-            <a href="#"><img src="imagen2.jpg" alt="Imagen album SEULGI"></a>
-            <a href="#" class="btn-play"><i class="fa-solid fa-circle-play"></i></a>
-          </section>
-          <a href="#" class="link"><p>28 Reasons - The 1st Mini Album <br> SEULGI</p></a>
-        </section>
-        <section class="albums">
-          <section class="imagen_play">
-            <a href="#"><img src="imagen3.jpg" alt="Imagen album Faun"></a>
-            <a href="#" class="btn-play"><i class="fa-solid fa-circle-play"></i></a>
-          </section>
-          <a href="#" class="link"><p>Renaissance (Pagan Medieval <br> Folk) <br> Faun</p></a>
-        </section>
-        <section class="albums">
-          <section class="imagen_play">
-            <a href="#"><img src="imagen4.jpg" alt="Imagen album Bad Bunny"></a>
-            <a href="#" class="btn-play"><i class="fa-solid fa-circle-play"></i></a>
-          </section>
-          <a href="#" class="link"><p>Un Verano Sin Ti <br> Bad Bunny</p></a>
-        </section>
-        <section class="albums">
-          <section class="imagen_play">
-            <a href="#"><img src="imagen5.jpg" alt="Imagen albums Faun"></a>
-            <a href="#" class="btn-play"><i class="fa-solid fa-circle-play"></i></a>
-          </section>
-          <a href="#" class="link"><p>Licht <br> Faun</p></a>
-        </section>
-      </section>
-      <button class="btn1 btn-claro"><a href="#" class="link"><strong>EXPLORA NUESTRO CATÁLOGO</strong></a></button>
-    </div>
-
-    <!--linea divisoria Novedades-->
-    <div class="divisor">
-      <p class="texto-divisor"><strong>NOVEDADES</strong></p>
-    </div>
-
-    <!--Importa-->
-    <div class="importa">
-      <h2 class="titulo-importa">Importa tu biblioteca de música <br> a Deezer</h2>
-      <p class="subtitulo-importa">Transfiere toda tu biblioteca de música desde otro servicio de streaming de música <br> a Deezer con un solo clic.</p>
-      <a href="#"><img src="importa.png" class="imagen-importa"></a>
-      <button class="btn2 btn-claro"><a href="#" class="link"><strong>MÁS INFORMACIÓN</strong></a></button>
-    </div>
-
+    </main>    
+    <!--    FOOTER  -->
+    <footer>
+            <div class="top-footer">
+                <img src="https://e-cdn-files.dzcdn.net/cache/images/unlogged/common/storebadges/appstore-badge-es-MX.4a5e40df4abf83a5f3d9ab740c5d3964.svg" alt="" width="134.62" height="45">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/es-419_badge_web_generic.png" alt="" width="174.41" height="67.5" >
+            </div>
+            <div class="middle-footer">
+                <ul class="nav-main-inicial">
+                    <li class="nav-main-item-title">Deezer</li>
+                    <li class="nav-main-item">Planes</li>
+                    <li class="nav-main-item">Dispositivos</li>
+                    <li class="nav-main-item">Descarga </li>
+                    <li class="nav-main-item">Descarga la aplicación para <br> computadora</li>
+                    <li class="nav-main-item">Tarjeta de regalo</li>
+                    <li class="nav-main-item">Ayuda</li>
+                    <li class="nav-main-item">Community y sugerencias</li>
+                    <li class="nav-main-item">Blog</li>
+                </ul>
+                <ul class="nav-main">
+                    <li class="nav-main-item-title">Ventajas</li>
+                    <li class="nav-main-item">Flow</li>
+                    <li class="nav-main-item">Identificar canciones</li>
+                    <li class="nav-main-item">Transferir a tu biblioteca</li>
+                    <li class="nav-main-item">Letras</li>
+                    <li class="nav-main-item">Escucha sin conexión</li>
+                </ul>
+                <ul class="nav-main">
+                    <li class="nav-main-item-title">Explorar</li>
+                    <li class="nav-main-item">Listas de éxitos</li>
+                    <li class="nav-main-item">Lanzamiento más popular</li>
+                    <li class="nav-main-item">Nuevos lanzamientos</li>
+                    <li class="nav-main-item">Radios</li>
+                    <li class="nav-main-item">Podcasts</li>
+                    <li class="nav-main-item">Música para todos los momentos</li>
+                </ul>
+                <ul class="nav-main">
+                    <li class="nav-main-item-title">¿Quiénes somos?</li>
+                    <li class="nav-main-item">Inversionistas</li>
+                    <li class="nav-main-item">Brand Partnerships</li>
+                    <li class="nav-main-item">Músicos y podcasters</li>
+                    <li class="nav-main-item">Desarrolladores</li>
+                    <li class="nav-main-item">Prensa</li>
+                    <li class="nav-main-item">Empleos</li>
+                </ul>
+                <ul class="nav-main-last">
+                    <li class="nav-main-item-title">Legal</li>
+                    <li class="nav-main-item">Condiciones generales de uso</li>
+                    <li class="nav-main-item">Política de privacidad</li>
+                    <li class="nav-main-item">Cookies</li>
+                    <li class="nav-main-item">Open Source Software Report (EN)</li>
+            </div>
+            <div class="btm-footer">
+                <ul class="footer-ul">
+                    <li class="footer-ul">
+                        <div class="redes-footer">
+                            <!--fb-->
+                            <svg class="svg-icon svg-icon-facebook" focusable="false" height="20" width="20" viewBox="0 0 12 12" aria-hidden="true">
+                                <path d="M9.205 6.6L9.5 4.393H7.136V3.031c.083-.617.263-1.038 1.187-1.038L9.5 1.992V0H7.727C6.084 0 4.922.994 4.922 2.82v1.573H3v2.133l1.773.074V12h2.363V6.6h2.069z"></path>
+                                <path d="M9.205 6.6L9.5 4.393H7.136V3.031c.083-.617.263-1.038 1.187-1.038L9.5 1.992V0H7.727C6.084 0 4.922.994 4.922 2.82v1.573H3v2.133l1.773.074V12h2.363V6.6h2.069z"></path>
+                            </svg>
+                            <!--ig-->
+                            <svg class="svg-icon svg-icon-instagram" focusable="false" height="20" width="20" viewBox="0 0 12 12" aria-hidden="true">
+                                <path d="M 6 1.0815 c 1.602 0 1.792 0.006 2.425 0.035 c 1.626 0.074 2.3855 0.8455 2.4595 2.4595 c 0.029 0.6325 0.0345 0.8225 0.0345 2.4245 c 0 1.6025 -0.006 1.792 -0.0345 2.4245 c -0.0745 1.6125 -0.832 2.3855 -2.4595 2.4595 c -0.633 0.029 -0.822 0.035 -2.425 0.035 c -1.602 0 -1.792 -0.006 -2.4245 -0.035 c -1.63 -0.0745 -2.3855 -0.8495 -2.4595 -2.46 c -0.029 -0.6325 -0.035 -0.822 -0.035 -2.4245 c 0 -1.602 0.0065 -1.7915 0.035 -2.4245 c 0.0745 -1.6135 0.832 -2.3855 2.4595 -2.4595 c 0.633 -0.0285 0.8225 -0.0345 2.4245 -0.0345 z m 0 -1.0815 c -1.6295 0 -1.8335 0.007 -2.4735 0.036 c -2.179 0.1 -3.39 1.309 -3.49 3.49 c -0.0295 0.6405 -0.0365 0.8445 -0.0365 2.474 c 0 1.6295 0.007 1.834 0.036 2.474 c 0.1 2.179 1.309 3.39 3.49 3.49 c 0.6405 0.029 0.8445 0.036 2.474 0.036 c 1.6295 0 1.834 -0.007 2.474 -0.036 c 2.177 -0.1 3.391 -1.309 3.4895 -3.49 c 0.0295 -0.64 0.0365 -0.8445 0.0365 -2.474 c 0 -1.6295 -0.007 -1.8335 -0.036 -2.4735 c -0.098 -2.177 -1.3085 -3.39 -3.4895 -3.49 c -0.6405 -0.0295 -0.845 -0.0365 -2.4745 -0.0365 z m 0 2.919 c -1.7015 0 -3.081 1.3795 -3.081 3.081 s 1.3795 3.0815 3.081 3.0815 s 3.081 -1.3795 3.081 -3.0815 c 0 -1.7015 -1.3795 -3.081 -3.081 -3.081 z m 0 5.081 c -1.1045 0 -2 -0.895 -2 -2 c 0 -1.1045 0.8955 -2 2 -2 s 2 0.8955 2 2 c 0 1.105 -0.8955 2 -2 2 z m 3.203 -5.9225 c -0.398 0 -0.7205 0.3225 -0.7205 0.72 s 0.3225 0.72 0.7205 0.72 c 0.3975 0 0.7195 -0.3225 0.7195 -0.72 s -0.322 -0.72 -0.7195 -0.72 z"></path>
+                            </svg>
+                            <!--tw-->
+                            <svg class="svg-icon svg-icon-twitter" focusable="false" height="20" width="20" viewBox="0 0 12 12" aria-hidden="true">
+                                <path d="M12 2.404a4.923 4.923 0 0 1-1.414.388 2.47 2.47 0 0 0 1.082-1.362 4.922 4.922 0 0 1-1.563.597A2.462 2.462 0 0 0 5.91 4.272 6.99 6.99 0 0 1 .836 1.702a2.46 2.46 0 0 0 .762 3.287 2.449 2.449 0 0 1-1.115-.309v.031c0 1.193.848 2.188 1.974 2.414a2.462 2.462 0 0 1-1.111.042 2.465 2.465 0 0 0 2.3 1.71A4.942 4.942 0 0 1 0 9.896a6.97 6.97 0 0 0 3.774 1.106c4.528 0 7.004-3.752 7.004-7.005 0-.107-.002-.213-.007-.318.481-.348.898-.781 1.229-1.275"></path>
+                            </svg>
+                            <!--yt-->
+                            <svg class="svg-icon svg-icon-youtube" focusable="false" height="20" width="20" viewBox="0 0 12 12" aria-hidden="true">
+                                <path d="M 9.8075 1.592 c -1.802 -0.123 -5.8155 -0.1225 -7.615 0 c -1.9485 0.133 -2.178 1.31 -2.1925 4.408 c 0.0145 3.0925 0.242 4.2745 2.1925 4.408 c 1.8 0.1225 5.813 0.123 7.615 0 c 1.9485 -0.133 2.178 -1.31 2.1925 -4.408 c -0.0145 -3.0925 -0.242 -4.2745 -2.1925 -4.408 z m -5.3075 6.408 v -4 l 4 1.9965 l -4 2.0035 z"></path>
+                            </svg>
+                    </li>
+                    <li class="footer-ul">
+                        <img src="https://e-cdn-files.dzcdn.net/cache/slash/images/unlogged/common/logos/deezer-white.01427c2ca73b439c06b9ffa6b8ef0b79.png" alt="" width="181" height="40">
+                    </li>
+                    <li class="footer-ul">
+                        <div class="copy-footer-text">© 2022 Deezer</div>
+                        <div class="footer-text">Español (latam) <img src="img/icons8-expand-arrow-24.png"   alt="icon-angle-right" class="icono-f" ></div>
+                    </li>
+                </ul>
+                </div>
+            </div>
+    </footer>    
 </body>
 </html>

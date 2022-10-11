@@ -1,3 +1,10 @@
+@font-face {
+  font-family: Mabry-Pro-Medium;
+  src: url('../fuentes/Mabry-Pro-Medium.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
   background-color: #121216;
   font-family: Open Sans,Arial,sans-serif;
@@ -9,32 +16,20 @@ body {
   padding: 0;
   color: white;
 }
-section {
-  margin-bottom: 96px;
+
+p {
+  font-family: 'Roboto', sans-serif;
 }
 
-/* .body  {
-  background-image: linear-gradient(286deg,rgb(27 231 255/50%) 25.99%,#e47aff 64.62%,rgb(109 19 255/60%) 80.2%);
-  background-image: var(--bg-gradient);
-  background-repeat: no-repeat;
-  -webkit-background-size: 100% 100%;
-  background-size: 100% 100%;
-  border-radius: 100%;
-  content: "";
-  -webkit-filter: blur(100px);
-  filter: blur(100px);
-  height: 30vh;
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
-  opacity: .9;
-  position: absolute;
-  right: 0;
-  top: 50px;
-  width: 80vw;
-  z-index: -1;
-}  */
-
+h1, h2, h3 {
+  font-family: Mabry-Pro-Medium;
+}
+.section {
+  margin-bottom: 96px;
+}
+.m {
+  margin-bottom: 96px;
+}
 
 header::before {
   content: "";
@@ -45,31 +40,28 @@ header::before {
   border-radius: 50%;
   filter: blur(100px) opacity(.4);
   inset: 0;
-  margin: auto;
+  margin: 3% auto;
   z-index: -1;
 }
+
 header {
  height: 115px;
  position: relative;
 }
+
 .centrar-elementos{
   display: flex; 
   align-items: center; 
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-/*   margin-top: 48px;
-  margin-bottom: 48px; */
 }
 
-p, button {
+button {
   font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3{
-  font-family: Mabry-Pro-Medium;
-  src: url(fuentes/Mabry-Pro-Medium.ttf);
-}
+
 /* Alinea el texto del encabezado al centro y establece el tamaño */
 h1 {
   text-align: center;
@@ -126,7 +118,13 @@ h3 {
 
 .card-body {
   padding: 24px 80px 16px;
+/*   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; */
 }
+
 
 
 
@@ -160,6 +158,9 @@ h3 {
   font-size: 16px;
   line-height: 19px;
   color: white;
+}
+.card-enlace {
+  opacity: .7;
 }
 
 /*texto secunadrio de las tarjetas*/
@@ -215,7 +216,7 @@ h3 {
   background: linear-gradient(180deg,#202122,#3a3b47 55.56%);
 }
 
-.logo-tigo {
+.logo-tigo-j {
   width: 25px;
 }
 /* fondo azul-morado degradado */
@@ -267,7 +268,7 @@ label {
   padding: 3px 10px;
   position: absolute;
   margin: -24px 540px;
-
+  font-weight: bold;
 }
 
 /* Establece el ancho del acordeón. Establece el margen y padding */
@@ -365,4 +366,156 @@ label {
 .parrafo {
   padding: 50px 0;
   line-height: 25px;
+}
+
+
+.titulo_catalogo {
+  font-size: 42px;
+  margin: 0px 357px 24px;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.subtitulo_catalogo {
+  font-size: 16px;
+  color: #BEBEC7;
+  margin: 0px 357px 48px;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.contenedor_albums {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  margin: 0px auto 48px auto;
+  padding: 0px 15px 0px 15px;
+  width: 70%;
+}
+
+.link { 
+  text-decoration: none;
+  color: black;
+}
+
+.albums img {
+  width: 215px;
+  height: 215px;
+  align-items: center;
+  margin: 0%;
+  padding: 0%;
+  border-radius: 4px;
+  border: none;
+}
+
+.albums p {
+  color: #BEBEC7;
+  font-size: 14px;
+  margin: 8px 0px 0px;
+  
+}
+
+.imagen_play {
+  position:relative;
+}
+
+.albums .btn-play {
+  font-size: 30px;
+  line-height: 30px;
+  color: white;
+  position: absolute;
+  bottom: 5%;
+  left: 12%;
+  margin: 0%;
+  padding: 0%;
+  background-color: black;
+  border-radius: 400px;
+  border: none;
+  z-index: 1;
+}
+.btn1 {
+  height: 54px;
+  width: 100%;
+  max-width: 267.81px;
+  text-transform: uppercase; 
+  border-radius: 400px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  margin: 45px 543.094px 103px;
+  padding: 10px 32px;
+}
+
+.btn-claro {
+  background-color: white;
+  color: black;
+}
+
+/*divisor*/
+.divisor {
+  text-align: center;
+}
+
+.texto-divisor {
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+}
+
+.texto-divisor::after,.texto-divisor::before {
+  content:'';
+  position: absolute;
+  width: 243.8px;
+  height: 2px;
+  top: 0.5em;
+}
+
+.texto-divisor::before {
+  left: -259.8px;
+  background-image: linear-gradient(to left, #515152, rgb(17, 17, 17, 0));
+}
+
+.texto-divisor::after {
+  right: -259.8px;
+  background-image: linear-gradient(to right, #515152, rgba(17, 17, 17, 0));
+}
+
+/*Importa*/
+.importa {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.titulo-importa {
+  font-size: 42px;
+  margin: 25px 0px 24px;
+}
+.subtitulo-importa {
+  font-size: 16px;
+  color: #BEBEC7;
+}
+
+.imagen-importa{
+  margin-left: 15px;
+}
+
+.btn2 {
+  height: 54px;
+  width: 100%;
+  max-width: 194.59px;
+  text-transform: uppercase;
+  border-radius: 400px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  margin: 10px 543.094px;
+  padding: 10px 32px;
+}
+
+.btn-claro {
+  background-color: white;
+  color: black;
 }

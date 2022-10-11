@@ -1,0 +1,185 @@
+/*  HEADER DEEZER   */
+
+
+.contenedor-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+}
+
+.contenedor p{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*div tigo*/
+.contenedor-tigo{
+    position: absolute;
+    align-items: center;
+    padding: 20px 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(89, 89, 89);
+    border-radius: 10px;
+    left: 52px;
+    top: 19px;
+}
+
+.cont-tigo-top{
+    display: flex;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    vertical-align: middle;
+    opacity: .9;
+    line-height: 14px;
+}
+
+.logo-tigo{
+    width: 20px;
+    position: relative;
+    vertical-align: middle;
+    margin-left: 44%;
+}   
+
+.icono-flecha-tigo{
+    fill: currentColor;
+    stroke: currentColor;
+    margin-left: 4px;
+}
+
+/*logo deezer*/
+.logo-deezer{
+    position: absolute;
+    width: 117px;
+    height: 24px;
+    top: 36px;
+    margin: 0px 0px 0px 36px;
+
+}
+
+/*botón inicio de sesión*/
+.boton-iniciar-sesion{
+    font-weight: 600;
+    font-size: 12px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    padding: 13px 16px 11px 16px;
+    margin: 19px 70px 0px 0px;
+    border: 1px solid;
+    border-radius: 100px;
+    border-color: #fff;
+}
+
+
+/*  FOOTER  */
+
+footer{
+    border-top: #353544 solid 1px;
+    padding: 64px 127px 117px;
+}
+
+/*enlaces de descarga*/
+.top-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+/*lista de nav*/
+.middle-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-main-inicial{
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px 90px 0px 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.nav-main{
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px 25px 0px 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.nav-main-last{
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 15px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.nav-main-item-title{
+    font-weight: 700;
+    padding: 5px 0px 14px;
+    margin-bottom: 17px;
+}
+
+.nav-main-item{
+    margin-bottom: 19px;
+    color: #BEBEC7;
+    font-weight: 500;
+}
+
+/*btm footer*/
+.btm-footer{
+    padding-top: 80px;
+}
+
+.footer-ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.svg-icon {
+    position: relative;
+    top: 8px;
+    fill: currentColor;
+    stroke: currentColor;
+    stroke-width: 0;
+    vertical-align: top;
+    padding: 7px 9.5px 0px;
+}
+
+.copy-footer-text{
+    font-size: 14px;
+    color: #818181;
+}
+
+.footer-text{
+    position: relative;
+    top: 15px;
+    color: #d1d1d7;
+    font-size: 14px;
+    padding: 0px 25px 0px 8px;
+    height: 39px;
+    line-height: 22px;
+}
+.icono-f {
+    position: relative;
+    line-height: 22px;
+    width: 20px !important; 
+    height: 20px !important; 
+}
